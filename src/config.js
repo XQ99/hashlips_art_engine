@@ -5,17 +5,17 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "Your Collection";
-const description = "Remember to replace this description";
-const baseUri = "ipfs://NewUriToReplace";
+const namePrefix = "Flumps";
+const description = "2,222 Flumps originating from the planet Xieh DeFor'i have landed on the blockchain securing their new forever home. Let the fun commence.";
+const baseUri = "ipfs://QmPeTKTvbvRF7Vs4C5uZkYKkJe2bfsr1fLwW8JMd1XsGrF";
 
 const solanaMetadata = {
-  symbol: "YC",
-  seller_fee_basis_points: 1000, // Define how much % you want from secondary market sales 1000 = 10%
-  external_url: "https://www.youtube.com/c/hashlipsnft",
+  symbol: "FLMP",
+  seller_fee_basis_points: 500, // Define how much % you want from secondary market sales 1000 = 10%
+  external_url: "https://www.twitter.com/FlumpsNFT",
   creators: [
     {
-      address: "7fXNuer5sbZtaTEPhtJ5g5gNtuyRoKkvxdjEjEnPN4mC",
+      address: "0x9Ddd8bec2d73e1d2F47D66ae7bcde38603Ef3E8d",
       share: 100,
     },
   ],
@@ -24,15 +24,15 @@ const solanaMetadata = {
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 5,
+    growEditionSizeTo: 50,
     layersOrder: [
       { name: "Background" },
-      { name: "Eyeball" },
-      { name: "Eye color" },
-      { name: "Iris" },
-      { name: "Shine" },
-      { name: "Bottom lid" },
-      { name: "Top lid" },
+      { name: "Marking" },
+      { name: "Body" },
+      { name: "Horn" },
+      { name: "Glyph" },
+      { name: "Gender" },
+      { name: "Eyes" },
     ],
   },
 ];
@@ -42,8 +42,8 @@ const shuffleLayerConfigurations = false;
 const debugLogs = false;
 
 const format = {
-  width: 512,
-  height: 512,
+  width: 1000,
+  height: 1000,
   smoothing: false,
 };
 
@@ -78,7 +78,9 @@ const background = {
   default: "#000000",
 };
 
-const extraMetadata = {};
+const extraMetadata = {
+  creator: "Ghostli",
+};
 
 const rarityDelimiter = "#";
 
@@ -92,7 +94,7 @@ const preview = {
 };
 
 const preview_gif = {
-  numberOfImages: 5,
+  numberOfImages: 2222,
   order: "ASC", // ASC, DESC, MIXED
   repeat: 0,
   quality: 100,
