@@ -5,9 +5,9 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "Flumps";
+const namePrefix = "Flump";
 const description = "2,222 Flumps originating from the planet Xieh DeFor'i have landed on the blockchain securing their new forever home. Let the fun commence.";
-const baseUri = "ipfs://QmPeTKTvbvRF7Vs4C5uZkYKkJe2bfsr1fLwW8JMd1XsGrF";
+const baseUri = "ipfs://QmZ1qNP5P8dBcxSV79a3em4ucpjCoEW69dtjJbCgvwAbE4";
 
 const solanaMetadata = {
   symbol: "FLMP",
