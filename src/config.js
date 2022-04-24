@@ -24,7 +24,7 @@ const solanaMetadata = {
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 2222,
+    growEditionSizeTo: 12,
     layersOrder: [
       { name: "Background" },
       { name: "Marking" },
@@ -87,8 +87,8 @@ const rarityDelimiter = "#";
 const uniqueDnaTorrance = 10000;
 
 const preview = {
-  thumbPerRow: 5,
-  thumbWidth: 50,
+  thumbPerRow: 6,
+  thumbWidth: 80,
   imageRatio: format.height / format.width,
   imageName: "preview.png",
 };
